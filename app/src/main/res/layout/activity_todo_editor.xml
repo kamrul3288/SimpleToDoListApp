@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="falcon_007.kamrulhasan.simpletodolistapp.TodoEditorActivity">
+
+   <EditText
+       android:id="@+id/taskNameEditText"
+       android:gravity="bottom"
+       android:maxLines="1"
+       android:hint="Task Title"
+       android:layout_weight="1"
+       android:layout_width="match_parent"
+       android:layout_height="0dp" />
+
+    <EditText
+        android:id="@+id/taskDescriptionEditText"
+        android:hint="Task Description"
+        android:gravity="start"
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <Button
+            android:onClick="setDate"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:text="Set Date"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:onClick="setTime"
+            android:textColor="@color/colorPrimary"
+            android:textAllCaps="false"
+            android:text="Set Time"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:id="@+id/activity_editor_dateText"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/activity_editor_timeText"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="bottom"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+
+        <Button
+            android:onClick="cancel"
+            android:gravity="center_vertical|start"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:text="Cancel"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:onClick="save"
+            android:gravity="center_vertical|right"
+            android:textColor="@color/colorPrimary"
+            android:textAllCaps="false"
+            android:text="Save"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

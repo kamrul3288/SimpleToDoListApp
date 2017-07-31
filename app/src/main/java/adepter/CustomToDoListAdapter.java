@@ -62,6 +62,7 @@ public class CustomToDoListAdapter extends ArrayAdapter<ToDoList>{
         if (view == null || (view.getTag()) == null){
             LayoutInflater inflater = LayoutInflater.from(activity);
             view = inflater.inflate(layoutResources,null);
+            holder = new ViewHolder();
 
             holder.taskNameText = (TextView) view.findViewById(R.id.taskName);
             holder.taskDateTime = (TextView) view.findViewById(R.id.taskDate);
